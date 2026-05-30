@@ -74,6 +74,8 @@ var (
 	FixedFontSize               bool
 )
 
+const wrapLimit = 50
+
 type DBusNotify string
 
 func (n DBusNotify) GetCapabilities() ([]string, *dbus.Error) {
@@ -117,6 +119,8 @@ func (n DBusNotify) Notify(
 	} else {
 		nf.message = summary
 	}
+
+	nf.message = Wrap(nf.message, wrapLimit)
 
 	// Using RegExp to add padding for all lines
 	nf.message = notification_padding_regexp.
