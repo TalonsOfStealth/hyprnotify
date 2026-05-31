@@ -306,7 +306,7 @@ Project Link: [https://github.com/codelif/hyprnotify](https://github.com/codelif
 [issues-shield]: https://img.shields.io/github/issues/codelif/hyprnotify.svg?style=for-the-badge
 [issues-url]: https://github.com/codelif/hyprnotify/issues
 [license-shield]: https://img.shields.io/github/license/codelif/hyprnotify.svg?style=for-the-badge
-[license-url]: https://github.com/codelif/hyprnotify/blob/master/LICENSE.txt
+[license-url]: https://github.com/codelif/hyprnotify/blob/main/LICENSE
 [product-screenshot]: images/screenshot.png
 [golang-shield]: https://img.shields.io/badge/Golang-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF
 [golang-url]: https://go.dev
