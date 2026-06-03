@@ -129,8 +129,10 @@ func (n DBusNotify) Notify(
 			"$1\u205F $2",
 		)
 
-	if expire_timeout != -1 {
+	if expire_timeout > 0 {
 		nf.time_ms = expire_timeout
+	} else if expire_timeout != -1 {
+		nf.time_ms = 2147483647
 	}
 	hyprsock.SendNotification(&nf)
 
